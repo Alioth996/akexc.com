@@ -1,18 +1,23 @@
 .footer {
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  right: 0;
   text-align: center;
+  padding: 10px 0;
   color: var(--element8);
   font-size: 14px;
 }
-
+.footer::before {
+  display: inline-block;
+  content: '';
+  width: 100%;
+  box-shadow: 0 -1px 1px 1px var(--surface4);
+}
 .cc {
   margin-bottom: 2px;
 }
 
-.cc + a {
-  text-decoration: underline;
-  text-decoration-color: var(--primary);
+.textLink {
+  font-weight: 600;
+  color: var(--primary);
+}
+.textLink:hover {
+  color: var(--hljs4);
 }
