@@ -1,14 +1,14 @@
-import Head from 'next/head';
-import Avatar from '../components/Home/Avatar';
-import Wrapper from '../components/Wrapper';
-import Content from '../components/Home/Content';
-import Footer from '../components/Footer';
+import Head from 'next/head'
+import Avatar from '../components/Home/Avatar'
+import Wrapper from '../components/Wrapper'
+import Content from '../components/Home/Content'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
     <div>
       <Head>
-        <title>Kelvin Qiu</title>
+        <title>凌天 - 主页</title>
       </Head>
       <Wrapper>
         <Avatar />
@@ -16,7 +16,7 @@ const Home = () => {
         <Footer />
       </Wrapper>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

@@ -1,3 +1,1 @@
-# My Portfolio Website
-
-https://codingkelvin.fun
+# my personal blog site
