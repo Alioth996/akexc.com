@@ -20,17 +20,17 @@ const Content = () => {
       <article>
         <p>
           Find me on{' '}
-          <a href='https://github.com/kelvinqiu802' rel='noreferrer' target='_blank' className={utilStyles.textLink}>
+          <a href='https://github.com/akex4396' rel='noreferrer' target='_blank' className={utilStyles.textLink}>
             Github
           </a>{' '}
-          and{' '}
+          or{' '}
           <a
-            href='https://space.bilibili.com/38563775'
+            href='https://space.bilibili.com/188042974'
             rel='noreferrer'
             target='_blank'
             className={utilStyles.textLink}
           >
-            哔哩哔哩
+            Bilibili
           </a>
           .
         </p>
