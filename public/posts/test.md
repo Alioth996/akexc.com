@@ -1,130 +1,41 @@
 ---
-title: 测试
-date: 2022-01-15
-tags: [前端, 教程, 背景]
+title: vercel的使用理解
+date: 2022-10-16
+tags: [前端, 自动部署]
 top_img: false
-keywords: [前端, 教程, 背景]
+keywords: [前端, 自动部署]
 categories: [Web开发]
 ---
 
-test .container { position: sticky; top: 0; width: 100vw; padding: 25px 60px; display: flex; align-items: center; color: var(--element1); }
+### 背景
 
-.signature { font-size: 25px; font-family: 'Cedarville Cursive', sans-serif; margin-right: auto; }
+最近把博客托管到 [vercel](). 为什么不选择其他的呢? 主要还是自己菜,[vercel]()属于傻瓜式操作,比较适合我这样懒鬼.但是在使用的过程中,也遇到了几个值得思考的问题
 
-.nav { display: flex; align-items: center; gap: 22px; font-size: 16px; }
+---
 
-.icon { font-size: 25px; cursor: pointer; transition: 0.3s; }
+### vercel 配置
 
-.icon:hover { color: var(--element3); }
+在不科学的情况下是不能访问的, 而且也 `ping`不通 . 这时候就要进行 `domin`处理了.
 
-.link { transition: 0.3s; }
+我的博客在进行域名绑定的时, [vercel]()提示 需要 `cname` 操作.`cname` 就是将 **我的域名** 指向 [vercle]() 提供的域名, 其实背后还是对 ip 地址的操作.
 
-.link:hover { color: var(--element3); }
+一切配置妥当, 博客可以通过自定义域名访问:
 
-.mobile { display: none; }
+![](../assets/blog.jpg)
 
-.laptop { display: block; }
 
-@media screen and (max-width: 600px) { .mobile { display: block; }
+这时候所请求的 **服务器** 并不是阿里云, 而是 [vercel]() 的服务器,该服务器位于美国.
 
-.laptop { display: none; }
+![](../assets/ip.jpg)
 
-.container { padding: 10px 25px; }
+### 疑问
 
-.nav { gap: 13px; } } .container { position: sticky; top: 0; width: 100vw; padding: 25px 60px; display: flex; align-items: center; color: var(--element1); }
+1. 明确的知道不科学 网站不能访问
+2. `cname` 所绑定的服务器位于美国
+3. 网站请求的服务器是海外, 可是为什么可以访问呢?
 
-.signature { font-size: 25px; font-family: 'Cedarville Cursive', sans-serif; margin-right: auto; }
+首先 可能是阿里云服务器做了正向代理, 毕竟服务器是直连互联网的.
 
-.nav { display: flex; align-items: center; gap: 22px; font-size: 16px; }
+其次 就是 [vercel]() 并没有完全被 墙, 但如果想在国内正常使用,必须使用已经备案的域名.
 
-.icon { font-size: 25px; cursor: pointer; transition: 0.3s; }
-
-.icon:hover { color: var(--element3); }
-
-.link { transition: 0.3s; }
-
-.link:hover { color: var(--element3); }
-
-.mobile { display: none; }
-
-.laptop { display: block; }
-
-@media screen and (max-width: 600px) { .mobile { display: block; }
-
-.laptop { display: none; }
-
-.container { padding: 10px 25px; }
-
-.nav { gap: 13px; } } .container { position: sticky; top: 0; width: 100vw; padding: 25px 60px; display: flex; align-items: center; color: var(--element1); }
-
-.signature { font-size: 25px; font-family: 'Cedarville Cursive', sans-serif; margin-right: auto; }
-
-.nav { display: flex; align-items: center; gap: 22px; font-size: 16px; }
-
-.icon { font-size: 25px; cursor: pointer; transition: 0.3s; }
-
-.icon:hover { color: var(--element3); }
-
-.link { transition: 0.3s; }
-
-.link:hover { color: var(--element3); }
-
-.mobile { display: none; }
-
-.laptop { display: block; }
-
-@media screen and (max-width: 600px) { .mobile { display: block; }
-
-.laptop { display: none; }
-
-.container { padding: 10px 25px; }
-
-.nav { gap: 13px; } } .container { position: sticky; top: 0; width: 100vw; padding: 25px 60px; display: flex; align-items: center; color: var(--element1); }
-
-.signature { font-size: 25px; font-family: 'Cedarville Cursive', sans-serif; margin-right: auto; }
-
-.nav { display: flex; align-items: center; gap: 22px; font-size: 16px; }
-
-.icon { font-size: 25px; cursor: pointer; transition: 0.3s; }
-
-.icon:hover { color: var(--element3); }
-
-.link { transition: 0.3s; }
-
-.link:hover { color: var(--element3); }
-
-.mobile { display: none; }
-
-.laptop { display: block; }
-
-@media screen and (max-width: 600px) { .mobile { display: block; }
-
-.laptop { display: none; }
-
-.container { padding: 10px 25px; }
-
-.nav { gap: 13px; } } .container { position: sticky; top: 0; width: 100vw; padding: 25px 60px; display: flex; align-items: center; color: var(--element1); }
-
-.signature { font-size: 25px; font-family: 'Cedarville Cursive', sans-serif; margin-right: auto; }
-
-.nav { display: flex; align-items: center; gap: 22px; font-size: 16px; }
-
-.icon { font-size: 25px; cursor: pointer; transition: 0.3s; }
-
-.icon:hover { color: var(--element3); }
-
-.link { transition: 0.3s; }
-
-.link:hover { color: var(--element3); }
-
-.mobile { display: none; }
-
-.laptop { display: block; }
-
-@media screen and (max-width: 600px) { .mobile { display: block; }
-
-.laptop { display: none; }
-
-.container { padding: 10px 25px; }
-
-.nav { gap: 13px; } }
+写到这里,我自己好像也明白了...
