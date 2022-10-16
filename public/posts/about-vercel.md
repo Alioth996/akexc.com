@@ -21,11 +21,11 @@ categories: [Web开发]
 
 一切配置妥当, 博客可以通过自定义域名访问:
 
-![博客](http://cdn.akexc.com/blog.jpg)
+![博客](http://cdn.akexc.com/myblog-assets/blog.jpg)
 
 这时候所请求的 **服务器** 并不是阿里云, 而是 [vercel]() 的服务器,该服务器位于美国.
 
-![vercel-ip](http://cdn.akexc.com/ip.jpg)
+![vercel-ip](http://cdn.akexc.com/myblog-assets/ip.jpg)
 
 ### 疑问
 
