@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Avatar = () => {
   const [index, setIndex] = React.useState(0)
   const ref = React.useRef()
-  const words = ['凌天', 'akex4396']
+  const words = ['天连碧水碧连天', '映日荷花别样红']
 
   setTimeout(() => {
     if (ref.current) {
