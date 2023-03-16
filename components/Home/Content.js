@@ -7,8 +7,8 @@ const Content = () => {
   return (
     <div className={`${styls.content} ${utilStyles.plain}`}>
       <article>
-        <p>Hi,welcome to my blog. I am 凌天, also akex4396</p>
-        <p>Anyway my hobbies:</p>
+        <p>Hi,I am Alioth. Welcome to my blog. </p>
+        <p>My hobbies</p>
         <ul>
           <li>喜欢编程</li>
           <li>喜欢民乐</li>
@@ -18,27 +18,41 @@ const Content = () => {
       </article>
       <Divider />
       <article>
-        <p>
-          Find me on{' '}
-          <a href='https://github.com/akex4396' rel='noreferrer' target='_blank' className={utilStyles.textLink}>
-            Github
-          </a>{' '}
-          or{' '}
-          <a
-            href='https://space.bilibili.com/188042974'
-            rel='noreferrer'
-            target='_blank'
-            className={utilStyles.textLink}
-          >
-            Bilibili
-          </a>
-          .
-        </p>
-        <p>
-          <a href='mailto:2844520415@qq.com' rel='noreferrer' target='_blank' className={utilStyles.textLink}>
-            Send mail to me
-          </a>
-        </p>
+        <p> Find me</p>
+        <ul>
+          <li>
+            <a href='https://github.com/akex4396' rel='noreferrer' target='_blank' className={utilStyles.textLink}>
+              Github
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://space.bilibili.com/188042974'
+              rel='noreferrer'
+              target='_blank'
+              className={utilStyles.textLink}
+            >
+              Bilibili
+            </a>
+          </li>
+
+          <li>
+            <a
+              href='https://juejin.cn/user/2494123366949895'
+              rel='noreferrer'
+              target='_blank'
+              className={utilStyles.textLink}
+            >
+              掘金
+            </a>
+          </li>
+
+          <li>
+            <a href='mailto:2844520415@qq.com' rel='noreferrer' target='_blank' className={utilStyles.textLink}>
+              E-mail
+            </a>
+          </li>
+        </ul>
       </article>
     </div>
   )

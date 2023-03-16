@@ -20,7 +20,7 @@ const Footer = () => {
           CC BY-NC-SA 4.0
         </a>
         &nbsp; © &nbsp;
-        <a href='https://github.com/akex4396' className={styles.textLink}>
+        <a href='https://github.com/alioth996' className={styles.textLink}>
           凌天(akex4396)
         </a>
       </p>

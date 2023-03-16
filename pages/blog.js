@@ -8,7 +8,7 @@ const blog = ({ posts }) => {
   return (
     <Wrapper>
       <Head>
-        <title>博文 - 凌天</title>
+        <title>Blog -Alioth</title>
       </Head>
       <Content posts={posts} />
       <Footer />

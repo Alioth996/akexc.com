@@ -20,7 +20,7 @@ const NavBar = ({ setMode, mode }) => {
   return (
     <div className={styles.container}>
       <Link href='/'>
-        <a className={styles.signature}>凌...</a>
+        <a className={styles.signature}>Alioth</a>
       </Link>
       <nav className={styles.nav}>
         {/* Mobile Icon */}

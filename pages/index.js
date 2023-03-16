@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>凌天 - 主页</title>
+        <title>Alioth - 主页</title>
       </Head>
       <Wrapper>
         <Avatar />

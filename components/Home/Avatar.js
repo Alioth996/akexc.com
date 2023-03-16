@@ -1,6 +1,5 @@
 import styles from '../../styles/Avatar.module.css'
 import React from 'react'
-import Image from 'next/image'
 
 const Avatar = () => {
   const [index, setIndex] = React.useState(0)
